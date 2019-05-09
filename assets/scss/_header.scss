@@ -1,0 +1,19 @@
+header{
+    nav.navbar{
+        z-index:2;
+        position: absolute;
+        
+    }
+    div.carousel-caption{
+        margin-bottom: 10%;
+        font-size: 25px;
+    }
+        ol.carousel-indicators{
+            li{
+                border-radius:50%;
+                background-color:red;
+                width:15px;
+                height:15px;
+            }
+        }
+}
