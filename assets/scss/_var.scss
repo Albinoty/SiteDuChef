@@ -1,6 +1,6 @@
 // Chemin pour les icones
 $fa-font-path: '../../node_modules/@fortawesome/fontawesome-free/webfonts';
-.bouffeGris{color:gray;}
+$bgwhite: url('../images/main_bg.jpg');
 .container-fluid{width: 80%;}
 .our{
     color:red; 
@@ -12,6 +12,12 @@ $fa-font-path: '../../node_modules/@fortawesome/fontawesome-free/webfonts';
     width: 100px;
     height: 100px;
 }
+@font-face {
+    font-family: "Whitelist";
+    src: url("../font/Whitelist-Demo.otf") format("OpenType");
+    font-weight:normal;
+    font-style:normal;
+}
 h2{
-
+    font-family: Whitelist,sans-serif;
 }
