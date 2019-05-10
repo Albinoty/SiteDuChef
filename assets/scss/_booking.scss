@@ -1,3 +1,20 @@
 section.booking{
     background: $bgwhite;
+    form{
+        background: url('../images/book_table_bg.jpg') center no-repeat;
+        background-size:cover;
+        padding: 30px;
+        border-radius:15px;
+        
+    }
+    .blog{
+        border-radius: 15px;
+        border:3px solid gray;
+    }
+    .blog:after{
+        content:"12 April/ 20 Comment/ 35 Likes";
+        background-color: red;
+        height: 10px;
+        width: auto;
+    }
 }
