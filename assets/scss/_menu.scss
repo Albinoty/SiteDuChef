@@ -1,6 +1,11 @@
 section.menu{
-    background: url('../images/main_bg.jpg') center no-repeat;
-    background-size: cover;
-    height: auto;
+    background: url('../images/main_bg.jpg');
     
+    aside{
+        border-right: 1px solid gray;
+        width: auto;
+        ul{
+            list-style: none;            
+        }
+    }
 }
