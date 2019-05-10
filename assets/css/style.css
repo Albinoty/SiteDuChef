@@ -7,7 +7,7 @@
   text-transform: uppercase;
 }
 
-.cafe {
+.imgBoule {
   border-radius: 50%;
   border: 2px solid gray;
   width: 100px;
@@ -16412,10 +16412,27 @@ section.booking .blog {
   border: 3px solid gray;
 }
 
-section.booking .blog:after {
-  content: "12 April/ 20 Comment/ 35 Likes";
+section.testimonials {
+  background: url("../images/testimonials_background.jpg");
+  color: white;
+}
+
+section.testimonials .text-contour {
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+section.contact {
+  background: url("../images/main_bg.jpg");
+}
+
+section.contact .info {
+  color: white;
   background-color: red;
-  height: 10px;
-  width: auto;
+  border-radius: 15px;
+}
+
+section.contact .info hr {
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

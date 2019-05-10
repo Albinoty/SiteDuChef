@@ -1,0 +1,11 @@
+section.contact{
+    background: $bgwhite;
+    .info{
+        color:white;
+        background-color:red;
+        border-radius:15px;
+        hr{
+            background-color: #fff;
+        }
+    }
+}
