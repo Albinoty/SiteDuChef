@@ -1,0 +1,11 @@
+footer{
+    background:url('../images/footer_background.jpg');
+    color:white;
+    .pied{
+        display: flex;
+        background-color: red;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+}

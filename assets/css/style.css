@@ -16435,4 +16435,23 @@ section.contact .info {
 section.contact .info hr {
   background-color: #fff;
 }
+
+footer {
+  background: url("../images/footer_background.jpg");
+  color: white;
+}
+
+footer .pied {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
