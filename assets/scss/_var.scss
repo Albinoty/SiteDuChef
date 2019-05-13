@@ -1,9 +1,14 @@
 // Chemin pour les icones
 $fa-font-path: '../../node_modules/@fortawesome/fontawesome-free/webfonts';
+// Variables
 $bgwhite: url('../images/main_bg.jpg');
+$rouge:#c43540;
+$white:white;
+$gras:bold;
+//Propriété css global
 .container-fluid{width: 80%;}
 .our{
-    color:red; 
+    color:$rouge; 
     text-transform: uppercase;
 }
 .imgBoule{
@@ -12,12 +17,13 @@ $bgwhite: url('../images/main_bg.jpg');
     width: 100px;
     height: 100px;
 }
+.gras{font-weight:bold;}
 @font-face {
-    font-family: "Whitelist";
-    src: url("../font/Whitelist-Demo.otf") format("OpenType");
+    font-family: "Courgette";
+    src: url("../font/Courgette-Regular.ttf") format("TrueType");
     font-weight:normal;
     font-style:normal;
 }
 h2{
-    font-family: Whitelist,sans-serif;
+    font-family: Courgette,sans-serif;
 }

@@ -5,10 +5,38 @@ section.booking{
         background-size:cover;
         padding: 30px;
         border-radius:15px;
-        
+        p{font-weight:lighter;}
+        .numero{
+            font-weight:bold;
+            font-size:18px;
+        }
+        button{
+            text-transform:uppercase;
+        }
     }
     .blog{
         border-radius: 15px;
         border:3px solid gray;
+    }
+    .post{bottom:15px}
+    .datePost{
+        top: 5px;
+        background-color: $rouge;
+        color:white;
+        font-size:15px;
+        padding: 10px 5px;
+        text-align: center;
+        border-radius: 50px;
+        .nombre{
+            font-weight: bold;
+            font-size:25px
+        }
+
+    }
+    button{
+        background-color: $rouge;
+        border-radius: 30px;
+        padding:10px 25px 10px 25px;
+        color:white;
     }
 }

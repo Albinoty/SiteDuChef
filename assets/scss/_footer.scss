@@ -1,9 +1,16 @@
 footer{
     background:url('../images/footer_background.jpg');
     color:white;
+    .tags{
+        background-color: $rouge;
+        margin-right: 3px;
+        color:white;
+        border: 1px solid white;
+        border-radius:20px;
+    }
     .pied{
         display: flex;
-        background-color: red;
+        background-color: $rouge;
         height: 50px;
         justify-content: center;
         align-items: center;

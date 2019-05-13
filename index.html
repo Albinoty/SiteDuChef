@@ -37,7 +37,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/images/banner1.jpg" class="d-block w-100 img-fluid" alt="...">
+                    <img src="./assets/images/banner1.jpg" class="d-block w-100 img-fluid" alt="..">
                     <div class="carousel-caption">
                         <h1>Whatever you occasion, taste makes it one to remember!</h1>
                         <button></button>
@@ -45,10 +45,10 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                <img src="./assets/images/book_table_bg.jpg" class="d-block w-100 img-fluid" alt="...">
+                <img src="./assets/images/book_table_bg.jpg" class="d-block w-100 img-fluid" alt="..">
                 </div>
                 <div class="carousel-item">
-                <img src="./assets/images/team_background.jpg" class="d-block w-100 img-fluid" alt="...">
+                <img src="./assets/images/team_background.jpg" class="d-block w-100 img-fluid" alt="..">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#pageCarousel" role="button" data-slide="prev">
@@ -63,7 +63,7 @@
     </header>
     <!-- Section Menu -->
     <section class="menu pt-3 pb-3">
-        <div class="container bg-primary">
+        <div class="container bg-light">
             <!-- le Head menu -->
             <div class="row">
                 <div class="col-2 p-0">
@@ -91,7 +91,7 @@
             </div>
             <!-- le menu avec d'un coté une liste et l'autre le contenu -->
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 pl-0">
                     <aside>
                         <ul class="row d-flex flex-column align-content-center">
                             <li class="col-3">
@@ -265,7 +265,7 @@
     </section>
     <!-- Section Booking -->
     <section class="booking pt-5 pb-5 ">
-        <div class="container bg-primary">
+        <div class="container bg-light">
             <!-- le Head menu -->
             <div class="row">
                 <div class="col-2 p-0">
@@ -282,8 +282,8 @@
             <!-- le formualaire de Reservation -->
             <div class="row text-center">
                 <div class="col-8 pt-5 pb-5 offset-2">
-                    <form action="" class="w-auto">
-                    <p>For any query please call us at:<span>+91-1234567890</span></p>
+                    <form action="#" class="w-auto ">
+                    <p class="text-white">For any query please call us at: <span class="numero">+91-1234567890</span></p>
                     <div class="row">
                         <div class="col-6 mt-5 mb-5">
                             <input type="text" name="nom" class="form-control mb-2" placeholder="Enter Full Name">
@@ -297,9 +297,17 @@
                             </select>
                         </div>
                         <div class="col-6 mt-5 mb-5">
-                            <input type="text" name="nom" class="form-control mb-2" placeholder="Enter Full Name">
-                            <input type="text" name="numero" class="form-control mb-2" placeholder="Phone Number">
-                            <input type="text" name="date" class="form-control mb-2" placeholder="Date">
+                            <input type="text" name="nom" class="form-control mb-2" placeholder="Enter Id">
+                            <select name="nombrePersonne" id="nombrePersonne" class="custom-select mb-2">
+                                <option selected>No Of Person</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <input type="text" name="Time" class="form-control mb-2" placeholder="Time">
                             <select name="" class="custom-select mb-2" id="">
                                 <option selected>Occasion</option>
                                 <option value="2">Birthday</option>
@@ -308,7 +316,7 @@
                             </select>
                         </div>
                     </div>
-                    <button class="btn btn-secondary">Book nom</button>
+                    <button class="btn">Book now</button>
                     </form>   
                 </div>
             </div>
@@ -324,8 +332,10 @@
                 <div class="col-4 offset-2">
                     <img src="./assets/images/blog_img1.jpg" class="img-fluid blog" alt="">
                     <div class="row">
-                        <div class="col-10 offset-1">
-                            <p>12 April/ 20 Comment/ 35 Likes</p>
+                        <div class="col-10 offset-1 post">
+                            <p class="datePost">
+                                <span class="nombre">12</span> April/ <span class="nombre">20</span> Comment/ <span class="nombre">35</span> Likes
+                            </p>
                             <h3>Lorem Ipsum</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, sapiente.</p>
                         </div>
@@ -334,8 +344,10 @@
                 <div class="col-4">
                     <img src="./assets/images/blog_img2.jpg" class="img-fluid blog" alt="">
                     <div class="row">
-                        <div class="col-10 offset-1">
-                            <p>12 April/ 20 Comment/ 35 Likes</p>
+                        <div class="col-10 offset-1 post">
+                            <p class="datePost">
+                                <span class="nombre">12</span> April/ <span class="nombre">20</span> Comment/ <span class="nombre">35</span> Likes
+                            </p>
                             <h3>Lorem Ipsum</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, sapiente.</p>
                         </div>
@@ -345,7 +357,7 @@
             <!-- bouton -->
             <div class="row mt-5 mb-5">
                 <div class="col text-center">
-                    <a><button>Know more</button></a>
+                    <a href="#"><button class="btn">Know more</button></a>
                 </div>
             </div>
             <!-- footer du blog -->
@@ -370,17 +382,21 @@
             </div>
             <div class="row mt-5 mb-5">
                 <div class="col-2">
-                    <img src="./assets/images/testimonial1.jpg" class="img-fluid imgBoule" alt="">
+                    <img src="./assets/images/testimonial1.jpg" class="img-fluid imgBoule float-right" alt="">
                 </div>
-                <div class="col-4 p-0 text-contour">
-                    <h4>Lorem Ipsum</h4>
-                    <span>Manager</span>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quam aperiam magni vel sit quasi fuga hic minus culpa deserunt.</p>
+                <div class="col-4">
+                    <div class="p-2 text-contour">
+                        <h4>Lorem Ipsum</h4>
+                        <span>Manager</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quam aperiam magni vel sit quasi fuga hic minus culpa deserunt.</p>
+                    </div>
                 </div>
-                <div class="col-4 text-contour">
-                    <h4>Lorem Ipsum</h4>
-                    <span>Manager</span>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quam aperiam magni vel sit quasi fuga hic minus culpa deserunt.</p>
+                <div class="col-4">
+                    <div class="p-2 text-contour">
+                        <h4>Lorem Ipsum</h4>
+                        <span>Manager</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quam aperiam magni vel sit quasi fuga hic minus culpa deserunt.</p>
+                    </div>
                 </div>
                 <div class="col-2">
                     <img src="./assets/images/testimonial1.jpg" class="img-fluid imgBoule" alt="">
@@ -457,19 +473,25 @@
                 </div>
                 <div class="col-4">
                     <h3>Popular tags</h3>
-                    <button>Restaurant</button>
-                    <button>Responsive Design</button>
-                    <button>Hotel</button>
-                    <button>Blog Section</button>
-                    <button>SEO</button>
-                    <button>Cuisine</button>
-                    <button>Graphic</button>
-                    <button>Food</button>
+                    <div class="row">
+                        <button class="btn tags">Restaurant</button>
+                        <button class="btn tags">Responsive Design</button>
+                        <button class="btn tags">Hotel</button>
+                    </div>
+                    <div class="row mt-1">
+                        <button class="btn tags">Blog Section</button>
+                        <button class="btn tags">SEO</button>
+                        <button class="btn tags">Cuisine</button>
+                    </div>
+                    <div class="row mt-1">
+                        <button class="btn tags">Graphic</button>
+                        <button class="btn tags">Food</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="pied">
-            <p>Copyright &copy; 2017.Design by Riser Techub</p>
+            <p class="mt-2">Copyright &copy; 2017.Design by Riser Techub</p>
         </div>
     </footer>
     <!-- Jquery -->
