@@ -7,5 +7,26 @@ section.menu{
         ul{
             list-style: none;            
         }
+        .bouffeGris{
+            color:gray;
+        }
+        
+        .titreBouffe{font-family: Courgette, sans-serif}
+        li:hover{
+            border-right: solid 5px $rouge;
+            .bouffeGris{color: $rouge;}
+        }  
     }
+     
+    h4{
+        font-size:15px;
+        font-weight: bold;
+        margin: 0;
+    }
+    .prix{
+        background-color: #efefef;
+        color:$rouge;
+        padding: 1px 10px;
+    }
+
 }

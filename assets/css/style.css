@@ -1,3 +1,7 @@
+.mt-6 {
+  margin-top: 200px;
+}
+
 .container-fluid {
   width: 80%;
 }
@@ -5,6 +9,7 @@
 .our {
   color: #c43540;
   text-transform: uppercase;
+  font-size: 1.5em;
 }
 
 .imgBoule {
@@ -18,6 +23,22 @@
   font-weight: bold;
 }
 
+.grandeLettre {
+  text-transform: uppercase;
+}
+
+.borderHeader {
+  background-color: rgba(0, 0, 0, 0.5);
+  background: url("../images/bottom_decoration_img.png");
+  height: 10px;
+}
+
+.borderFooter {
+  background-color: rgba(0, 0, 0, 0.5);
+  background: url("../images/footer_bottom_decoration_img.png");
+  height: 10px;
+}
+
 @font-face {
   font-family: "Courgette";
   src: url("../font/Courgette-Regular.ttf") format("TrueType");
@@ -25,8 +46,8 @@
   font-style: normal;
 }
 
-h2 {
-  font-family: Courgette,sans-serif;
+h1, h2 {
+  font-family: Courgette, sans-serif;
 }
 
 /*!
@@ -16360,14 +16381,80 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+header {
+  background: rgba(0, 0, 0, 0.7);
+  height: auto;
+}
+
 header nav.navbar {
   z-index: 2;
   position: absolute;
+  width: 100%;
+  height: auto;
 }
 
-header div.carousel-caption {
-  margin-bottom: 10%;
+header nav.navbar .navbar-nav {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+}
+
+header nav.navbar .navbar-nav li {
+  padding: 5px 40px;
+}
+
+header nav.navbar .navbar-nav li.nav-item:hover {
+  background-color: #c43540;
+}
+
+header nav.navbar .navbar-nav .lien {
+  color: white;
+}
+
+header nav.navbar .navbar-nav .logo {
+  margin: 0 25px;
+}
+
+header .bouton1 {
+  background-color: #e4e4e4;
+  color: black;
+  border-radius: 50px;
+  margin-right: 10px;
+  padding: 10px 25px;
+}
+
+header .bouton2 {
+  background-color: #c43540;
+  color: white;
+  border-radius: 50px;
+  margin-left: 10px;
+  padding: 10px 25px;
+}
+
+header div.intro {
+  position: absolute;
   font-size: 25px;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  margin-top: 116px;
+}
+
+header div.intro h1 {
+  width: 60%;
+  font-size: 3.6em;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+}
+
+header div.intro button {
+  text-transform: uppercase;
+}
+
+header div.carousel {
+  z-index: -1;
+  height: 100vh;
 }
 
 header ol.carousel-indicators li {
@@ -16388,6 +16475,34 @@ section.menu aside {
 
 section.menu aside ul {
   list-style: none;
+}
+
+section.menu aside .bouffeGris {
+  color: gray;
+}
+
+section.menu aside .titreBouffe {
+  font-family: Courgette, sans-serif;
+}
+
+section.menu aside li:hover {
+  border-right: solid 5px #c43540;
+}
+
+section.menu aside li:hover .bouffeGris {
+  color: #c43540;
+}
+
+section.menu h4 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+}
+
+section.menu .prix {
+  background-color: #efefef;
+  color: #c43540;
+  padding: 1px 10px;
 }
 
 section.chef {
@@ -16471,6 +16586,7 @@ section.testimonials .text-contour {
 
 section.contact {
   background: url("../images/main_bg.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 section.contact .info {
@@ -16485,6 +16601,14 @@ section.contact .info hr {
 
 footer {
   background: url("../images/footer_background.jpg");
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
   color: white;
 }
 

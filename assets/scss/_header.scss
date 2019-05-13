@@ -1,13 +1,66 @@
 header{
+    background: rgba(0,0,0,0.7);
+    height: auto;
     nav.navbar{
         z-index:2;
         position: absolute;
-        
+        width: 100%; 
+        height: auto;   
+        .navbar-nav{
+            border-top:1px solid #ddd;
+            border-bottom:1px solid #ddd;
+            font-size:20px;
+            li{
+                padding:5px 40px;
+            }
+            li.nav-item:hover{
+                background-color: $rouge;
+            }
+            .lien{
+                color:white;
+            }
+            .logo{
+                margin: 0 25px;
+            }
+        }
     }
-    div.carousel-caption{
-        margin-bottom: 10%;
+    .bouton1{
+        background-color: #e4e4e4;
+        color:black;
+        border-radius:50px;
+        margin-right: 10px;
+        padding:10px 25px;
+    }
+    .bouton2{
+        background-color:$rouge;
+        color: white;
+        border-radius:50px;
+        margin-left:10px;
+        padding:10px 25px;
+    }
+
+    div.intro{
+        position: absolute;
         font-size: 25px;
+        z-index: 2;
+        width: 100%;
+        height: auto;
+        margin-top:116px;
+        h1{
+            width: 60%;
+            font-size:3.6em;
+            text-align: center;
+            color:white;
+            margin: 0 auto;
+        }
+        button{
+            text-transform: uppercase;
+        }
     }
+        div.carousel{
+            z-index:-1;
+            height: 100vh;
+        }
         ol.carousel-indicators{
             li{
                 border-radius:50%;

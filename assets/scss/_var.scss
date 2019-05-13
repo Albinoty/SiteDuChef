@@ -6,10 +6,14 @@ $rouge:#c43540;
 $white:white;
 $gras:bold;
 //Propriété css global
+.mt-6{
+    margin-top: 200px;
+}
 .container-fluid{width: 80%;}
 .our{
     color:$rouge; 
     text-transform: uppercase;
+    font-size:1.5em;
 }
 .imgBoule{
     border-radius: 50%; 
@@ -18,12 +22,25 @@ $gras:bold;
     height: 100px;
 }
 .gras{font-weight:bold;}
+.grandeLettre{
+    text-transform: uppercase;
+}
+.borderHeader{
+    background-color: rgba(0,0,0,0.5);
+    background:url("../images/bottom_decoration_img.png");
+    height: 10px;
+}
+.borderFooter{
+    background-color: rgba(0,0,0,0.5);
+    background:url("../images/footer_bottom_decoration_img.png");
+    height: 10px;
+}
 @font-face {
     font-family: "Courgette";
     src: url("../font/Courgette-Regular.ttf") format("TrueType");
     font-weight:normal;
     font-style:normal;
 }
-h2{
-    font-family: Courgette,sans-serif;
+h1, h2{
+    font-family: Courgette, sans-serif;
 }
