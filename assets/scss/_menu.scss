@@ -12,6 +12,12 @@ section.menu{
         }
         
         .titreBouffe{font-family: Courgette, sans-serif}
+
+        .active{
+            border-right: solid 5px $rouge;
+            .bouffeGris{color: $rouge;}
+        }
+
         li:hover{
             border-right: solid 5px $rouge;
             .bouffeGris{color: $rouge;}
@@ -27,6 +33,18 @@ section.menu{
         background-color: #efefef;
         color:$rouge;
         padding: 1px 10px;
+    }
+
+    .col-sm-6:after{
+        position: absolute;
+        content: '';
+        margin-top:55px;
+        width: 80%;
+        height: 1px;
+        border-width: 2px;
+        border-style:dotted;
+        border-bottom: gray; 
+       
     }
 
 }

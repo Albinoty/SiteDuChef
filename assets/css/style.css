@@ -50,6 +50,10 @@ h1, h2 {
   font-family: Courgette, sans-serif;
 }
 
+h2 {
+  margin-bottom: 0px;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -16400,7 +16404,7 @@ header nav.navbar .navbar-nav {
 }
 
 header nav.navbar .navbar-nav li {
-  padding: 5px 40px;
+  padding: 3px 25px;
 }
 
 header nav.navbar .navbar-nav li.nav-item:hover {
@@ -16420,7 +16424,7 @@ header .bouton1 {
   color: black;
   border-radius: 50px;
   margin-right: 10px;
-  padding: 10px 25px;
+  padding: 15px 30px;
 }
 
 header .bouton2 {
@@ -16428,7 +16432,7 @@ header .bouton2 {
   color: white;
   border-radius: 50px;
   margin-left: 10px;
-  padding: 10px 25px;
+  padding: 15px 30px;
 }
 
 header div.intro {
@@ -16437,15 +16441,13 @@ header div.intro {
   z-index: 2;
   width: 100%;
   height: auto;
-  margin-top: 116px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 header div.intro h1 {
-  width: 60%;
   font-size: 3.6em;
-  text-align: center;
   color: white;
-  margin: 0 auto;
 }
 
 header div.intro button {
@@ -16485,6 +16487,14 @@ section.menu aside .titreBouffe {
   font-family: Courgette, sans-serif;
 }
 
+section.menu aside .active {
+  border-right: solid 5px #c43540;
+}
+
+section.menu aside .active .bouffeGris {
+  color: #c43540;
+}
+
 section.menu aside li:hover {
   border-right: solid 5px #c43540;
 }
@@ -16505,9 +16515,21 @@ section.menu .prix {
   padding: 1px 10px;
 }
 
+section.menu .col-sm-6:after {
+  position: absolute;
+  content: '';
+  margin-top: 55px;
+  width: 80%;
+  height: 1px;
+  border-width: 2px;
+  border-style: dotted;
+  border-bottom: gray;
+}
+
 section.chef {
   color: white;
-  background: url("../images/team_background.jpg");
+  background: url("../images/team_background.jpg") center;
+  background-size: 200% 100%;
 }
 
 section.chef hr {
@@ -16625,7 +16647,7 @@ footer .pied {
   display: -ms-flexbox;
   display: flex;
   background-color: #c43540;
-  height: 50px;
+  height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
