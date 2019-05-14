@@ -2,7 +2,7 @@ header{
     background: rgba(0,0,0,0.7);
     height: auto;
     nav.navbar{
-        z-index:2;
+        z-index:3;
         position: absolute;
         width: 100%; 
         height: auto;   
@@ -11,16 +11,14 @@ header{
             border-bottom:1px solid #ddd;
             font-size:20px;
             li{
-                padding:3px 25px;
+                padding:3px 25px 3px 20px;
+                text-transform: uppercase;
             }
             li.nav-item:hover{
                 background-color: $rouge;
             }
             .lien{
                 color:white;
-            }
-            .logo{
-                margin: 0 25px;
             }
         }
     }
@@ -48,7 +46,10 @@ header{
         margin: 0 auto;
         text-align: center;
         h1{
-            font-size:3.6em;
+            width: 70%;
+            font-size:5vw;
+            margin:0 auto;
+            padding-top:75px;   
             color:white;
         }
         button{
@@ -57,14 +58,23 @@ header{
     }
         div.carousel{
             z-index:-1;
-            height: 100vh;
+            height: 100vh   ;
         }
         ol.carousel-indicators{
-            li{
+            li{ 
                 border-radius:50%;
-                background-color:red;
+                background-color:white;
                 width:15px;
                 height:15px;
+                div{
+                    border-radius:50%;
+                    background-color: white;
+                    border: 2px solid black;
+                    border-radius:50%;
+                    width: 10px;
+                    height: 10px;
+                    margin: 2px auto;                    
+                }
             }
         }
 }

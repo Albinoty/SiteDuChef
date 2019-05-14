@@ -14,7 +14,7 @@
 
 .imgBoule {
   border-radius: 50%;
-  border: 2px solid gray;
+  border: 3px solid white;
   width: 100px;
   height: 100px;
 }
@@ -52,6 +52,10 @@ h1, h2 {
 
 h2 {
   margin-bottom: 0px;
+}
+
+.carte {
+  border: 1px solid #cccccc !important;
 }
 
 /*!
@@ -16391,7 +16395,7 @@ header {
 }
 
 header nav.navbar {
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   width: 100%;
   height: auto;
@@ -16404,7 +16408,8 @@ header nav.navbar .navbar-nav {
 }
 
 header nav.navbar .navbar-nav li {
-  padding: 3px 25px;
+  padding: 3px 25px 3px 20px;
+  text-transform: uppercase;
 }
 
 header nav.navbar .navbar-nav li.nav-item:hover {
@@ -16413,10 +16418,6 @@ header nav.navbar .navbar-nav li.nav-item:hover {
 
 header nav.navbar .navbar-nav .lien {
   color: white;
-}
-
-header nav.navbar .navbar-nav .logo {
-  margin: 0 25px;
 }
 
 header .bouton1 {
@@ -16446,7 +16447,10 @@ header div.intro {
 }
 
 header div.intro h1 {
-  font-size: 3.6em;
+  width: 70%;
+  font-size: 5vw;
+  margin: 0 auto;
+  padding-top: 75px;
   color: white;
 }
 
@@ -16461,9 +16465,19 @@ header div.carousel {
 
 header ol.carousel-indicators li {
   border-radius: 50%;
-  background-color: red;
+  background-color: white;
   width: 15px;
   height: 15px;
+}
+
+header ol.carousel-indicators li div {
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 2px auto;
 }
 
 section.menu {
@@ -16523,13 +16537,14 @@ section.menu .col-sm-6:after {
   height: 1px;
   border-width: 2px;
   border-style: dotted;
-  border-bottom: gray;
+  border-bottom: black;
+  opacity: 0.2;
 }
 
 section.chef {
   color: white;
   background: url("../images/team_background.jpg") center;
-  background-size: 200% 100%;
+  background-size: 300% 300%;
 }
 
 section.chef hr {
@@ -16542,14 +16557,18 @@ section.booking {
 }
 
 section.booking form {
-  background: url("../images/book_table_bg.jpg") center no-repeat;
-  background-size: cover;
+  background: url("../images/book_table_bg.jpg") center;
+  background-size: 100% 100%;
   padding: 30px;
   border-radius: 15px;
 }
 
 section.booking form p {
   font-weight: lighter;
+}
+
+section.booking form input, section.booking form select {
+  border-radius: 10px;
 }
 
 section.booking form .numero {
@@ -16563,7 +16582,7 @@ section.booking form button {
 
 section.booking .blog {
   border-radius: 15px;
-  border: 3px solid gray;
+  border: 3px solid #ececec;
 }
 
 section.booking .post {
@@ -16590,10 +16609,12 @@ section.booking button {
   border-radius: 30px;
   padding: 10px 25px 10px 25px;
   color: white;
+  text-transform: uppercase;
 }
 
 section.testimonials {
-  background: url("../images/testimonials_background.jpg");
+  background: url("../images/testimonials_background.jpg") center;
+  background-size: 400% 400%;
   color: white;
 }
 
@@ -16618,7 +16639,7 @@ section.contact .info {
 }
 
 section.contact .info hr {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 footer {

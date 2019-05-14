@@ -1,11 +1,14 @@
 section.booking{
     background: $bgwhite;
     form{
-        background: url('../images/book_table_bg.jpg') center no-repeat;
-        background-size:cover;
+        background: url('../images/book_table_bg.jpg') center;
+        background-size: 100% 100%;
         padding: 30px;
         border-radius:15px;
         p{font-weight:lighter;}
+        input,select{
+            border-radius:10px;
+        }
         .numero{
             font-weight:bold;
             font-size:18px;
@@ -16,7 +19,7 @@ section.booking{
     }
     .blog{
         border-radius: 15px;
-        border:3px solid gray;
+        border:3px solid #ececec;
     }
     .post{bottom:15px}
     .datePost{
@@ -38,5 +41,6 @@ section.booking{
         border-radius: 30px;
         padding:10px 25px 10px 25px;
         color:white;
+        text-transform: uppercase;
     }
 }

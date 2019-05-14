@@ -1,5 +1,6 @@
 section.testimonials{
-    background: url('../images/testimonials_background.jpg');
+    background: url('../images/testimonials_background.jpg') center;
+    background-size: 400% 400%;
     color:white;
     span{
         color:$rouge;
