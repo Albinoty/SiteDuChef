@@ -7,6 +7,7 @@ section.booking{
         border-radius:15px;
         p{font-weight:lighter;}
         input,select{
+            height: 45px;
             border-radius:10px;
         }
         .numero{
@@ -21,7 +22,7 @@ section.booking{
         border-radius: 15px;
         border:3px solid #ececec;
     }
-    .post{bottom:15px}
+    .post{bottom:33px;}
     .datePost{
         top: 5px;
         background-color: $rouge;

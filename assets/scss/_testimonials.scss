@@ -1,12 +1,14 @@
 section.testimonials{
     background: url('../images/testimonials_background.jpg') center;
-    background-size: 400% 400%;
+    background-size: 800% 800%;
+    background-position-x: 50%;
+    background-position-y: 80%;
     color:white;
     span{
         color:$rouge;
     }
     .text-contour{
-        border: 2px solid white;
+        border: 1px solid white;
         border-radius: 15px;    
         
     }

@@ -18,6 +18,10 @@ section.menu{
             .bouffeGris{color: $rouge;}
         }
 
+        li{
+            border-right: solid 5px $bgwhite;
+        }
+
         li:hover{
             border-right: solid 5px $rouge;
             .bouffeGris{color: $rouge;}
@@ -39,7 +43,7 @@ section.menu{
         position: absolute;
         content: '';
         margin-top:55px;
-        width: 80%;
+        width: 90%;
         height: 1px;
         border-width: 2px;
         border-style:dotted;

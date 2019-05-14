@@ -16390,12 +16390,11 @@ readers do not read off random characters that represent icons */
 }
 
 header {
-  background: rgba(0, 0, 0, 0.7);
   height: auto;
 }
 
 header nav.navbar {
-  z-index: 3;
+  z-index: 5;
   position: absolute;
   width: 100%;
   height: auto;
@@ -16404,11 +16403,11 @@ header nav.navbar {
 header nav.navbar .navbar-nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  font-size: 20px;
+  font-size: 1vw;
 }
 
 header nav.navbar .navbar-nav li {
-  padding: 3px 25px 3px 20px;
+  padding: 10px 25px 10px 20px;
   text-transform: uppercase;
 }
 
@@ -16450,17 +16449,12 @@ header div.intro h1 {
   width: 70%;
   font-size: 5vw;
   margin: 0 auto;
-  padding-top: 75px;
+  padding-top: 10vw;
   color: white;
 }
 
 header div.intro button {
   text-transform: uppercase;
-}
-
-header div.carousel {
-  z-index: -1;
-  height: 100vh;
 }
 
 header ol.carousel-indicators li {
@@ -16470,14 +16464,29 @@ header ol.carousel-indicators li {
   height: 15px;
 }
 
-header ol.carousel-indicators li div {
+header ol.carousel-indicators li.active div {
   border-radius: 50%;
   background-color: white;
   border: 2px solid black;
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  margin: 2px auto;
+  margin: 2px 2.5px;
+}
+
+header .borderHeader {
+  background: url("../images/bottom_decoration_img.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 10px;
+}
+
+header::before {
+  content: '';
+  width: 100%;
+  height: 1225px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 2;
 }
 
 section.menu {
@@ -16509,6 +16518,10 @@ section.menu aside .active .bouffeGris {
   color: #c43540;
 }
 
+section.menu aside li {
+  border-right: solid 5px url("../images/main_bg.jpg");
+}
+
 section.menu aside li:hover {
   border-right: solid 5px #c43540;
 }
@@ -16533,7 +16546,7 @@ section.menu .col-sm-6:after {
   position: absolute;
   content: '';
   margin-top: 55px;
-  width: 80%;
+  width: 90%;
   height: 1px;
   border-width: 2px;
   border-style: dotted;
@@ -16568,6 +16581,7 @@ section.booking form p {
 }
 
 section.booking form input, section.booking form select {
+  height: 45px;
   border-radius: 10px;
 }
 
@@ -16586,7 +16600,7 @@ section.booking .blog {
 }
 
 section.booking .post {
-  bottom: 15px;
+  bottom: 33px;
 }
 
 section.booking .datePost {
@@ -16614,7 +16628,9 @@ section.booking button {
 
 section.testimonials {
   background: url("../images/testimonials_background.jpg") center;
-  background-size: 400% 400%;
+  background-size: 800% 800%;
+  background-position-x: 50%;
+  background-position-y: 80%;
   color: white;
 }
 
@@ -16623,7 +16639,7 @@ section.testimonials span {
 }
 
 section.testimonials .text-contour {
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 15px;
 }
 

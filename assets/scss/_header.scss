@@ -1,17 +1,16 @@
 header{
-    background: rgba(0,0,0,0.7);
     height: auto;
     nav.navbar{
-        z-index:3;
+        z-index:5;
         position: absolute;
         width: 100%; 
         height: auto;   
         .navbar-nav{
             border-top:1px solid #ddd;
             border-bottom:1px solid #ddd;
-            font-size:20px;
+            font-size:1vw;
             li{
-                padding:3px 25px 3px 20px;
+                padding:10px 25px 10px 20px;
                 text-transform: uppercase;
             }
             li.nav-item:hover{
@@ -49,23 +48,21 @@ header{
             width: 70%;
             font-size:5vw;
             margin:0 auto;
-            padding-top:75px;   
+            padding-top:10vw;   
             color:white;
         }
         button{
             text-transform: uppercase;
         }
     }
-        div.carousel{
-            z-index:-1;
-            height: 100vh   ;
-        }
         ol.carousel-indicators{
             li{ 
                 border-radius:50%;
                 background-color:white;
                 width:15px;
                 height:15px;
+            }
+            li.active{
                 div{
                     border-radius:50%;
                     background-color: white;
@@ -73,8 +70,22 @@ header{
                     border-radius:50%;
                     width: 10px;
                     height: 10px;
-                    margin: 2px auto;                    
+                    margin: 2px 2.5px;
                 }
             }
         }
+    .borderHeader{
+        background: url("../images/bottom_decoration_img.png");
+        background-color: rgba(0,0,0,0.5);
+        height: 10px;
+    }
+}
+
+header::before{
+    content:'';
+    width: 100%;
+    height: 1225px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index:2;
 }
