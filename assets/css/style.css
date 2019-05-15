@@ -16489,6 +16489,12 @@ header::before {
   z-index: 2;
 }
 
+@media screen and (max-width: 720px) {
+  header {
+    display: none;
+  }
+}
+
 section.menu {
   background: url("../images/main_bg.jpg");
 }
@@ -16554,6 +16560,12 @@ section.menu .col-sm-6:after {
   opacity: 0.2;
 }
 
+@media screen and (max-width: 720px) {
+  aside {
+    left: 30%;
+  }
+}
+
 section.chef {
   color: white;
   background: url("../images/team_background.jpg") center;
@@ -16610,7 +16622,7 @@ section.booking .datePost {
   font-size: 15px;
   padding: 10px 5px;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 section.booking .datePost .nombre {

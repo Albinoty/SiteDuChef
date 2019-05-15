@@ -89,3 +89,10 @@ header::before{
     position: absolute;
     z-index:2;
 }
+@media screen and (max-width: 720px){
+
+    header{
+        display:none;
+    }
+
+}
