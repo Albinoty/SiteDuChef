@@ -16490,7 +16490,34 @@ header::before {
 }
 
 @media screen and (max-width: 720px) {
+  header::before, div.carousel, .intro {
+    display: none;
+  }
   header {
+    /*
+        nav.navbar{
+            position: relative;
+            background-color: rgba(0,0,0,0.7);
+            z-index: initial;
+            .navbar-nav{
+                font-size:initial;
+                text-align:center;
+                border: initial;
+                .nav-item{
+                    border-top:1px solid #ddd;
+                    display: flex; 
+                    order:2;               
+                }
+
+            }
+            .logo{
+                text-align: center;
+                display: flex;
+                order:1;
+            }
+        }
+        .borderHeader{top:120px;}
+*/
     display: none;
   }
 }
